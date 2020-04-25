@@ -1,0 +1,2 @@
+# Seven
+Django Rest + Angular
