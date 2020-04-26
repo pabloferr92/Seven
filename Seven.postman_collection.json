@@ -60,7 +60,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "",
+						"value": "Token e4fd3e91f78df2cfbf6e16247437f106b12e4917",
 						"type": "text"
 					},
 					{
@@ -122,7 +122,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"username\": \"bagaceira\",\n        \"last_name\": \"seven\",\n        \"password\": \"abc321\",\n        \"email\": \"pabloferr92@gmail.com\"\n\t\n}"
+					"raw": "{\n        \"username\": \"seven\",\n        \"last_name\": \"seven\",\n        \"password\": \"abc321\",\n        \"email\": \"pabloferr92@gmail.com\"\n\t\n}"
 				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/users/",
@@ -173,7 +173,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/users/1?",
+					"raw": "http://127.0.0.1:8000/users/14?",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -184,7 +184,7 @@
 					"port": "8000",
 					"path": [
 						"users",
-						"1"
+						"14"
 					],
 					"query": [
 						{
@@ -205,8 +205,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "Token e4fd3e91f78df2cfbf6e16247437f106b12e4917",
-						"disabled": true
+						"value": "Token e4fd3e91f78df2cfbf6e16247437f106b12e4917"
 					},
 					{
 						"key": "",
@@ -223,10 +222,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n        \"username\": \"monstrao\",\n        \"last_name\": \"seven\",\n        \"password\": \"abc321\",\n        \"email\": \"pabloferr92@gmail.com\"\n\t\n}"
+					"raw": "{\n        \"username\": \"seven_update\",\n        \"last_name\": \"seven\",\n        \"password\": \"abc321\",\n        \"email\": \"pabloferr92@gmail.com\"\n\t\n}"
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/users/1/",
+					"raw": "http://127.0.0.1:8000/users/14/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -237,7 +236,7 @@
 					"port": "8000",
 					"path": [
 						"users",
-						"1",
+						"14",
 						""
 					]
 				}
