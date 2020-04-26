@@ -19,7 +19,7 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = users_serializer
     authentication_classes = [TokenAuthentication,]
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
 
     def create(self, request):

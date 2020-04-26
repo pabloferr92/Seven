@@ -30,19 +30,8 @@
 					}
 				],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "username",
-							"value": "monstrao",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "abc321",
-							"type": "text"
-						}
-					]
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"monstrao\",\n\t\"password\" : \"abc321\"\n}"
 				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/api-token-auth",
@@ -71,7 +60,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Token e4fd3e91f78df2cfbf6e16247437f106b12e4917",
+						"value": "",
 						"type": "text"
 					},
 					{
@@ -171,18 +160,17 @@
 						"type": "text",
 						"value": "",
 						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "WWW-Authenticate: Token",
-							"value": "e4fd3e91f78df2cfbf6e16247437f106b12e4917",
-							"type": "text",
-							"disabled": true
-						}
-					]
+					"mode": "raw",
+					"raw": ""
 				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/users/1?",
