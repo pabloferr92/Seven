@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserListComponentComponent } from './user-list-component/user-list-component.component';
 import { FormsModule } from '@angular/forms';
-import { UserService } from './user.service';
+import { UsersService } from './users.service';
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -19,7 +20,7 @@ import { UserService } from './user.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [UserService],
+  providers: [UsersService, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

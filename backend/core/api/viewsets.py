@@ -19,7 +19,15 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = users_serializer
     authentication_classes = [TokenAuthentication,]
-    permission_classes = [IsAuthenticated]
+    #permission_classes = [IsAuthenticated]
+
+
+
+    def list(self, request):
+        print("front chegou aqui")
+        queryset = User.objects.all()
+        serializer = users_serializer(queryset, many=True)
+        return Response(serializer.data)
 
 
     def create(self, request):
