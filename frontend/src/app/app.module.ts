@@ -7,6 +7,9 @@ import { UserListComponentComponent } from './user-list-component/user-list-comp
 import { FormsModule } from '@angular/forms';
 import { UsersService } from './users.service';
 import { HttpClient } from '@angular/common/http';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -14,11 +17,15 @@ import { HttpClient } from '@angular/common/http';
   declarations: [
     AppComponent,
     UsersComponent,
-    UserListComponentComponent
+    UserListComponentComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
+    AppRoutingModule
+    
   ],
   providers: [UsersService, HttpClientModule],
   bootstrap: [AppComponent]

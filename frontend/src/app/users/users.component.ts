@@ -26,4 +26,16 @@ export class UsersComponent {
     );
   };
 
-}
+  retrieveMember = (member) => {
+    this.api.getMember(member.id).subscribe(
+      data => {
+      console.log(data);
+    },
+    error => {
+      console.log("error message: ", error.message);
+    }
+    );
+  };   
+
+  }
+
