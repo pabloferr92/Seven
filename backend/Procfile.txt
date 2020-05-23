@@ -1,1 +1,1 @@
-web: gunicorn sales-mh.wsgi
+web: gunicorn seven.wsgi
