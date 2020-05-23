@@ -19,9 +19,11 @@ from django.contrib import admin
 from django.urls import path, include
 from core import core_urls as coreurls
 from rest_framework.authtoken.views import obtain_auth_token
+from core.views import index
 
 
 urlpatterns = [
+    path('',index,name='index'),
     path('admin/', admin.site.urls),
     path('users/', include(coreurls)),
     path('api-token-auth',obtain_auth_token)
