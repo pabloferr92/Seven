@@ -28,7 +28,7 @@ SECRET_KEY = '@rwukve_s-5q(4mopwck(0psh6!^$5u$=(+ry0976zjgi1xvbk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','https://sales-app-mh.herokuapp.com']
+ALLOWED_HOSTS = ['*','https://sales-app-mh.herokuapp.com','https://sales-app-mh.herokuapp.com/']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile')
 
